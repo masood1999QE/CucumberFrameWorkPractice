@@ -27,6 +27,7 @@ public class Hooks {
 		System.out.println("filePath:"+ filePath);
 		File file=new File(filePath);
 		FileInputStream fis=new FileInputStream(file);
+		prop=new Properties();
 		prop.load(fis);
 		String browser=prop.getProperty("browser");
 		System.out.println("browser:"+browser);
