@@ -44,7 +44,7 @@ public class Login_StepsDefinition {
 
 	}
 
-	//@After
+	@After
 	public void tearDown() {
 		driver.quit();
 	}
