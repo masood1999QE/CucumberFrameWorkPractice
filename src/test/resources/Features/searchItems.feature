@@ -10,4 +10,12 @@ And  Verify the "<Item Name>" is displayed in the page
 Examples:
 |Item Name|
 |Apple|
-|Samsung|
+
+
+@SmokeTest
+Scenario: To Verify the Search Items Functionality in Lambda Ecommerce Site
+Given User lands in the home page
+When User enter "Android" and Click on Search Button
+Then Verify the title of the page contains the "Android"
+And  Verify the "Android" is displayed in the page
+
