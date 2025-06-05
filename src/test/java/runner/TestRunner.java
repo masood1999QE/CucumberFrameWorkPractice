@@ -14,6 +14,7 @@ import org.junit.platform.suite.api.Suite;
 @ConfigurationParameter(key = Constants.FILTER_TAGS_PROPERTY_NAME,value = "@SmokeTest")
 @ConfigurationParameter(key = Constants.EXECUTION_DRY_RUN_PROPERTY_NAME,value = "false")
 @ConfigurationParameter(key = Constants.PLUGIN_PROPERTY_NAME,value = "pretty, html:target-output/cucumber-report/cucumber.html")
+@ConfigurationParameter(key = Constants.PLUGIN_PROPERTY_NAME,value = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:")
 public class TestRunner {
 
 }
